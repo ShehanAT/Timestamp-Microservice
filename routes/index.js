@@ -1,10 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var cool = require('cool-ascii-faces');
 
 /* GET home page. */
+
+
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' , name:'Shehan', h1: 'SHEHAN'});
 });
+
 
 router.get('/:time', function(req, res){
   //check if it is a unix or natural 
